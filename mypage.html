@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I have a title!</title>
+	<style>
+		
+		html{
+			border-left: 225px solid #A69AB7;
+			border-right: 225px solid #A69AB7;
+		}
+		
+        body{
+            text-align:center;
+            background-color:#000C47;
+		}
+		#icon{
+			border-radius: 50%;
+		} -->
+        h1{
+			color:#A69AB7;
+		}
+        p{
+            font-family: Verdana;
+            font-size: 16px;
+            color:#FFFFFF;
+        }
+		td{
+			align-content:center;
+			border: 5px solid #656565;
+			border-spacing: 20px 20px;
+			position: relative;
+		}
+		#bottomleft {
+			position: absolute;
+			bottom: 10px;
+			left: 6px;
+			font-size: 18px;
+			text-decoration:none;
+			color:#ffffff
+		}
+		a {
+			font-family:Verdana;
+			text-decoration: none;
+			color:#A69AB7;
+		}
+		.home_links:hover{
+			opacity:0.9;
+			text-color:#FFFFFF;			
+		}
+		.contact:hover{
+			font-size:24px;
+			color:#FFFFFF;
+		}	
+		
+    </style>
+    <script type="text/javascript">
+			function myFunction() {
+				var image = document.getElementById("icon");
+				if(image.src.match("sprites/evil_snowflake.png")){
+					image.src = "sprites/winter_bird.png";
+					console.log("alwayshere");
+				} else {
+					image.src = "sprites/evil_snowflake.png";
+					console.log("keysmash");
+				}
+			}
+	</script>	
+</head>
+<body>
+	<!--this goes on every page EXSEPT home
+	<aside> 
+		<div>
+        	
+        	<img src="sprites\winter_bird.png" />
+            <div>
+                <strong>Cecelia Ahrens</strong>
+            </div>
+        </div>
+        <div>
+        	<li>home</li>
+            <li>education</li>
+            <li>intrests</li>
+            <li>achevments</li>
+            <li>contact information</li>
+            
+	</aside>
+    -->
+	
+    
+    <div>
+    	<img src="sprites\winter_bird.png" id="icon" onClick="myFunction()">
+    	<h1>Cecelia Ahrens</h1>
+        <p>
+            <p>basic info</p>
+            <p>intro</p>
+        </p>
+	</div>
+    <table align="center">
+    	<tr>
+            <td>
+                <a href="website link" class="home_links">
+                    <img src="../Pictures/Saved Pictures/chalkboard.jpg" style="width:100px;height:100px;" />
+                    <div id="bottomleft"> Education </div>
+                </a>
+            </td>
+            <td>
+                <a href="website link" class="home_links">
+                    <img src="../Pictures/Saved Pictures/notebook_coffee.jpg" style="width:100px;height:100px;" /> 
+                    <div id="bottomleft">Intrests</div>
+                </a>
+            </td>
+            <td>
+                <a href="website link" class="home_links">
+                    <img src="../Pictures/Saved Pictures/book.jpg" style="width:100px;height:100px;" /> 
+                    <div id="bottomleft">Resume</div>
+                </a>
+            </td>
+        </tr>
+    </table>
+    
+    <h3>
+    	<a href="website link" class="contact">Contact info</a>
+    </h3>
+    
+    
+    
+</body>
+
+</html>
